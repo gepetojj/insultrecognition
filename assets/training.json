@@ -1,0 +1,125 @@
+[
+    {
+        "input": "Seu fudido do caralho",
+        "output": [1]
+    },
+    {
+        "input": "Você é um cuzão da porra",
+        "output": [1]
+    },
+    {
+        "input": "Vai se fuder",
+        "output": [1]
+    },
+    {
+        "input": "Vai tomar no cu",
+        "output": [1]
+    },
+    {
+        "input": "Filho da puta",
+        "output": [1]
+    },
+    {
+        "input": "Enfia um peixe no cu e diz que é sereia",
+        "output": [1]
+    },
+    {
+        "input": "Puta merda, voce é top hein",
+        "output": [1]
+    },
+    {
+        "input": "Cabelo bonito da porra",
+        "output": [1]
+    },
+    {
+        "input": "Seu pnc",
+        "output": [1]
+    },
+    {
+        "input": "Pau no cu",
+        "output": [1]
+    },
+    {
+        "input": "Putinha",
+        "output": [1]
+    },
+    {
+        "input": "Rapariga barata",
+        "output": [1]
+    },
+    {
+        "input": "eu quero mesmo é que você se foda",
+        "output": [1]
+    },
+    { "input": "funciona ai caralho", "output": [1] },
+    { "input": "sua rapariga", "output": [1] },
+    { "input": "mas que cuzão", "output": [1] },
+    { "input": "buceta", "output": [1] },
+    { "input": "fodao", "output": [1] },
+    { "input": "fudido", "output": [1] },
+    { "input": "rabuda", "output": [1] },
+    { "input": "pica", "output": [1] },
+    { "input": "pau", "output": [1] },
+    { "input": "vai tomar no seu cu", "output": [1] },
+    { "input": "porra", "output": [1] },
+    { "input": "fodase mlk", "output": [1] },
+    {
+        "input": "Sua mãe é minha",
+        "output": [0.5]
+    },
+    {
+        "input": "Seu porco",
+        "output": [0.5]
+    },
+    {
+        "input": "Você é um merda",
+        "output": [0.5]
+    },
+    {
+        "input": "retardado",
+        "output": [0.5]
+    },
+    { "input": "sacanagem", "output": [0] },
+    { "input": "deixa", "output": [0] },
+    {
+        "input": "me reconhece ai trouxa",
+        "output": [0]
+    },
+    { "input": "correndo pela vida", "output": [0] },
+    { "input": "baba ovo", "output": [0.5] },
+    { "input": "corno", "output": [0.5] },
+    { "input": "escroto", "output": [0] },
+    {
+        "input": "Eu não to nem ai",
+        "output": [0]
+    },
+    {
+        "input": "Ninguem se importa",
+        "output": [0]
+    },
+    {
+        "input": "Vai se lascar",
+        "output": [0]
+    },
+    {
+        "input": "Seu acéfalo",
+        "output": [0]
+    },
+    {
+        "input": "Você é um nojeto",
+        "output": [0]
+    },
+    {
+        "input": "Imbecil",
+        "output": [0]
+    },
+    {
+        "input": "Quero que você se lasque",
+        "output": [0]
+    },
+    {
+        "input": "Filho da mãe",
+        "output": [0]
+    },
+    { "input": "vou cavalgar", "output": [0] }
+]

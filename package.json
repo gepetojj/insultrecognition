@@ -1,0 +1,22 @@
+{
+    "name": "insultrecognition",
+    "version": "1.0.0",
+    "main": "main.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "node main.js",
+        "dev": "nodemon main.js -e js"
+    },
+    "dependencies": {
+        "brain.js": "^2.0.0-beta.2",
+        "discord.js": "^12.5.1",
+        "dotenv": "^8.2.0",
+        "fs": "^0.0.1-security",
+        "lowdb": "^1.0.0",
+        "moment": "^2.29.1",
+        "moment-timezone": "^0.5.32"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+    }
+}
