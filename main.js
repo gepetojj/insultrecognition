@@ -29,6 +29,7 @@ const database = lowdb(adapter);
 database
     .defaults({
         filters: [],
+        channels: [],
     })
     .write();
 
@@ -65,31 +66,40 @@ client.on("message", async (message) => {
         !message.content.startsWith(globalPrefix) &&
         message.author.id !== client.user.id
     ) {
-        const isFilterEnabled = database
-            .get("filters")
+        const isChannelBlocked = database
+            .get("channels")
             .find({ guildId: message.channel.guild.id })
             .value();
-
         if (
-            isFilterEnabled === undefined ||
-            isFilterEnabled.mode === "enabled"
+            isChannelBlocked === undefined ||
+            !isChannelBlocked.blocked.includes(message.channel.id)
         ) {
-            const messageLevel = net.run(message.content);
-            env === "development" ? console.log(messageLevel) : null;
-            if (messageLevel === "1") {
-                const embed = new Discord.MessageEmbed()
-                    .setColor("#fdfd96")
-                    .setTitle("Alerta")
-                    .addField(
-                        "Descrição:",
-                        `Frase com palavra(s) inadequada(s) detectada. [${message.content}]`
-                    )
-                    .setFooter(
-                        `Mensagem enviada por: ${message.author.username}`,
-                        message.author.avatarURL()
-                    );
+            const isFilterEnabled = database
+                .get("filters")
+                .find({ guildId: message.channel.guild.id })
+                .value();
 
-                message.reply(embed);
+            if (
+                isFilterEnabled === undefined ||
+                isFilterEnabled.mode === "enabled"
+            ) {
+                const messageLevel = net.run(message.content);
+                env === "development" ? console.log(messageLevel) : null;
+                if (messageLevel === "1") {
+                    const embed = new Discord.MessageEmbed()
+                        .setColor("#fdfd96")
+                        .setTitle("Alerta")
+                        .addField(
+                            "Descrição:",
+                            `Frase com palavra(s) inadequada(s) detectada. [${message.content}]`
+                        )
+                        .setFooter(
+                            `Mensagem enviada por: ${message.author.username}`,
+                            message.author.avatarURL()
+                        );
+
+                    message.reply(embed);
+                }
             }
         }
     }

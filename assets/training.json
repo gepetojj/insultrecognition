@@ -12,7 +12,15 @@
         "output": [1]
     },
     {
+        "input": "vsfd",
+        "output": [1]
+    },
+    {
         "input": "Vai tomar no cu",
+        "output": [1]
+    },
+    {
+        "input": "vtnc",
         "output": [1]
     },
     {
@@ -89,6 +97,7 @@
     { "input": "baba ovo", "output": [0.5] },
     { "input": "corno", "output": [0.5] },
     { "input": "escroto", "output": [0] },
+    { "input": "babaca", "output": [0] },
     {
         "input": "Eu não to nem ai",
         "output": [0]
